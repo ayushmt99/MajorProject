@@ -18,7 +18,7 @@ def fetch_calories(prediction):
         url = 'https://www.google.com/search?&q=calories in ' + prediction
         req = requests.get(url).text
         scrap = BeautifulSoup(req, 'html.parser')
-        calories = scrap.find("div", class_="Z0LcW an_fna").text
+        calories = scrap.find("div", class_="BNeawe iBp4i AP7Wnd").text
         return calories
     except Exception as e:
         st.error("Can't able to fetch the Calories")
