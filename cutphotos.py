@@ -9,15 +9,11 @@ topRight = image[0:centerY, centerX:w]
 bottomLeft=image[centerY:h,0:centerX]
 bottomRight = image[centerY:h , centerX:w]
 
-cv2.imshow("topLeft" , topLeft)
-cv2.imshow("topRight" , topRight)
-cv2.imshow("bottomLeft" , bottomLeft)
-cv2.imshow("bottomRight" , bottomRight)
 path =r"./upload_images"
-isWritten= cv2.imwrite(os.path.join(path , 'waka1.jpg'), topLeft)
-isWritten= cv2.imwrite(os.path.join(path , 'waka2.jpg'), topRight)
-isWritten= cv2.imwrite(os.path.join(path , 'waka3.jpg'), bottomLeft)
-isWritten= cv2.imwrite(os.path.join(path , 'waka4.jpg'), bottomRight)
+isWritten= cv2.imwrite(os.path.join(path , 'p1.jpg'), topLeft)
+isWritten= cv2.imwrite(os.path.join(path , 'p2.jpg'), topRight)
+isWritten= cv2.imwrite(os.path.join(path , 'p3.jpg'), bottomLeft)
+isWritten= cv2.imwrite(os.path.join(path , 'p4.jpg'), bottomRight)
 if isWritten:
     print('Image is successfully saved as file.')
 cv2.waitKey(0)
